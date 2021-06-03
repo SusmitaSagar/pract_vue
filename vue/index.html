@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn vue</title>
+    <script src="https://unpkg.com/vue@3.0.2"></script>
+</head>
+<body>
+    <h1>heloo :( in html</h1>
+    <!-- //inside this div is controlled by vue ,if condition is false it wont show anythig ,sour is true-->
+
+    <div id="app"> 
+        <div v-if="sourc"> 
+     <p>{{title}} - {{experience}} - {{time}} - {{sourc}}</p>
+     <button v-on:click="time--">decrease time</button>
+     <button v-on:click="time++">increase by 1 </button>
+     <div @click="title  = 'this is chnaged tiiittlllee'"> chnage title</div>
+     <div @click="changeExperience('awsome exp') "> change experience</div>
+     <!-- <div @click="changeSour('books') "> chnage source</div> -->
+    </div>
+    <!-- <button @click="toggleShowSourc">
+        <span>hide sourc</span> -->
+    </button>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
